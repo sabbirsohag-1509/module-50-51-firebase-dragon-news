@@ -17,21 +17,21 @@ const Registration = () => {
     registerInfo(email, password)
       .then((result) => {
         const user = result.user;
-        console.log("User created:", user);
+        // console.log("User created:", user);
 
         // Step 2: Update profile
         updatedUserInfo({ displayName: name, photoURL: photo })
           .then(() => {
-            console.log("Profile updated successfully");
+            alert("Profile updated successfully");
             navigate("/"); // redirect to home after registration
           })
           .catch((error) => {
-            console.log("Profile update error:", error.message);
-            alert(error.message);
+            // console.log( error.message);
+            alert("Profile update error:",error.message);
           });
       })
       .catch((error) => {
-        console.log(error.message);
+        // console.log(error.message);
         alert(error.message);
       });
   };
