@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar, FaRegStar, FaEye, FaShareAlt, FaRegBookmark } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   const {
@@ -9,6 +10,7 @@ const NewsCard = ({ news }) => {
     total_view,
     thumbnail_url,
     details,
+    id
   } = news;
 
   // Format the date nicely
@@ -63,9 +65,9 @@ const NewsCard = ({ news }) => {
       {/* --- Description --- */}
       <div className="px-4 py-4 text-sm text-gray-600 leading-relaxed">
         {details.length > 220 ? `${details.slice(0, 220)}...` : details}
-        <button className="ml-1 text-orange-500 font-semibold hover:underline cursor-pointer">
+        <Link to={`/newsDetails/${id}`} className="ml-1 text-orange-500 font-semibold hover:underline cursor-pointer">
           Read More
-        </button>
+        </Link>
       </div>
 
       {/* --- Footer --- */}
