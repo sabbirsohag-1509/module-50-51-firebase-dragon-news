@@ -16,7 +16,7 @@ const LogIn = () => {
 
     loginInfo(email, password)
       .then(result => {
-        // console.log(result.user);
+        console.log(result.user);
         // if (location.state) {
         //   navigate(location.state)
         // } else {

@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         path: "/category/:id",
         Component: CategoryNews,
         loader: () => fetch("/news.json"),
-         hydrateFallbackElement: <Loading></Loading>
+        hydrateFallbackElement: <Loading></Loading>,
       },
     ],
   },
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     loader: () => fetch("/news.json"),
-    hydrateFallbackElement: <Loading></Loading>
+    hydrateFallbackElement: <Loading></Loading>,
   },
   {
     path: "/*",

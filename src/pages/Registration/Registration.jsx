@@ -17,7 +17,7 @@ const Registration = () => {
     registerInfo(email, password)
       .then((result) => {
         const user = result.user;
-        // console.log("User created:", user);
+        console.log("User created:", user);
 
         // Step 2: Update profile
         updatedUserInfo({ displayName: name, photoURL: photo })
