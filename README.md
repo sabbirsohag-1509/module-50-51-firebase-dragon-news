@@ -1,16 +1,69 @@
-# React + Vite
+# 📰 The Dragon News
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Dragon News is a modern online reading newspaper platform where users can read the latest news and live updates anytime.  
+It provides a smooth reading experience with authentication-based access and a clean, responsive user interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Website
+👉 
 
-## React Compiler
+## 📂 Client Repository
+👉 https://github.com/sabbirsohag-1509/module-50-51-firebase-dragon-news
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshot
+![The Dragon News Screenshot](./screenshot.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📖 Project Overview
+The Dragon News is an online news reading platform built with React where users can read news articles in real time.  
+The platform uses Firebase Authentication and JWT for secure access and delivers a fast, user-friendly reading experience.
+
+---
+
+## 🚀 Core Features
+- Online newspaper with live news reading
+- Firebase authentication (Login & Register)
+- JWT-based secure authorization
+- Category-based news browsing
+- Marquee-style breaking news section
+- Responsive design for all devices
+- Clean UI built with Tailwind CSS & DaisyUI
+- Date & time formatting for news articles
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** React (Vite)
+- **Routing:** React Router
+- **Styling:** Tailwind CSS, DaisyUI
+- **Authentication:** Firebase
+- **Security:** JSON Web Token (JWT)
+- **Utilities:** Date-fns
+- **UI Enhancements:** React Icons, React Fast Marquee
+
+---
+
+## 📦 NPM Packages Used
+
+### Dependencies
+- react
+- react-dom
+- react-router
+- firebase
+- tailwindcss
+- daisyui
+- date-fns
+- react-icons
+- react-fast-marquee
+
+### Dev Dependencies
+- vite
+- @vitejs/plugin-react
+- eslint
+- eslint-plugin-react-hooks
+- eslint-plugin-react-refresh
+

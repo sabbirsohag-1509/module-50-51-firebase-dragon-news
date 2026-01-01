@@ -18,13 +18,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        Component: Home,
+        Component: Home
       },
       {
         path: "/category/:id",
         Component: CategoryNews,
         loader: () => fetch("/news.json"),
-        hydrateFallbackElement: <Loading></Loading>,
+        hydrateFallbackElement: <Loading></Loading>
       },
     ],
   },
@@ -35,11 +35,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/auth/registration",
-        Component: Registration,
+        Component: Registration
       },
       {
         path: "/auth/login",
-        Component: LogIn,
+        Component: LogIn
       },
     ],
   },
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/*",
-    Component: Error,
+    Component: Error
   },
 ]);
 export default router;
